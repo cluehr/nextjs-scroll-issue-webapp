@@ -13,16 +13,12 @@ scroll to the top despite `scroll: false` being passed explicitly.
 1. Build and start in production mode:
 
    ```bash
-   npm run prod
+   npm i && npm run prod
    ```
 
 2. Open http://localhost:3000.
-3. **Hover over the "Home (hover to prefetch)" link** near the top of the page. This seeds the
-   segment route cache for the no-search-params URL (`/`), which is required to trigger the
-   buggy code path (see [Root cause](#root-cause) below).
-4. Scroll down to the **Filters** section at the bottom.
-5. Tick one colour checkbox — scroll position is preserved. ✅
-6. Tick a second colour checkbox — the page scrolls back to the top. ❌
+3. Scroll down to the **Filters** section at the bottom.
+4. Tick one colour checkbox — the page scrolls back to the top. ❌
 
 ---
 
