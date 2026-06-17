@@ -85,7 +85,7 @@ The same mechanism fires on every subsequent tick.
 
 Three files in `node_modules/next/dist/` need to be patched to thread `scrollBehavior` through
 the retry path. See the full diff in
-[`next-js-scroll-issue-report.md`](../consumer-webapp/next-js-scroll-issue-report.md).
+[`next-js-scroll-issue-report.md`](./next-js-scroll-issue-report.md).
 
 The fix in `server-patch-reducer.js` is:
 
